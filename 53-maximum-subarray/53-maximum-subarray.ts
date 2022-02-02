@@ -5,9 +5,7 @@ function maxSubArray(nums: number[]): number {
     
     for (let i = 1; i < nums.length; i += 1) {
         sum = Math.max(sum + nums[i], nums[i]);
-        if (sum > max) {
-            max = sum;
-        }
+        max = Math.max(sum, max);
     }
     return max;
 };
