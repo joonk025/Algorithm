@@ -1,3 +1,4 @@
 function lengthOfLastWord(s: string): number {
-    return s.trim().split(' ').pop().length; 
+    const newS = s.trim().replace(/[^a-z]/gi, '@');
+    return newS.length - newS.lastIndexOf('@') - 1;
 }
