@@ -18,7 +18,5 @@ function merge(nums1: number[], m: number, nums2: number[], n: number): void {
        
     // sort nums1 in ascending order
     nums1.sort((a,b) => a - b)
-    
-    // return nums1
-   // return nums1;
+
 };
