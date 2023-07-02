@@ -6,12 +6,7 @@ const createCounter = function(n) {
     let counter = 0;
     
     return function() {
-        if (counter === 0) {
-            counter += 1;
-            return n
-        } else {
-            return n + counter++;
-        }
+       return n + counter++;
     };
 };
 
