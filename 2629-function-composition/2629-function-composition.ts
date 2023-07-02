@@ -5,7 +5,7 @@ type F = (x: number) => number;
 
 function compose(functions: F[]): F {
     functions = functions.reverse();
-    let index = 0;
+    let index: number = 0;
     
 	return function calculate (x: number): number {
         if (index === functions.length) return x;
